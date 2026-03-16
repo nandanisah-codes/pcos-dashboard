@@ -179,6 +179,12 @@ st.markdown("""
         text-align: center; padding: 2rem 0; color: #7a8ba8;
         font-size: 0.85rem; border-top: 1px solid #e0e7ff; margin-top: 3rem;
     }
+             /* Hide Streamlit menu, footer, toolbar */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    [data-testid="stToolbar"] {display: none;}
+    [data-testid="stDecoration"] {display: none;}
 </style>
 """, unsafe_allow_html=True)
 
